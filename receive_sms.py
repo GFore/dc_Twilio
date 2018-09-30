@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 @app.route("/sms", methods=['GET', 'POST'])
 def sms_reply():
-    resp = MessagingResponse()
-    resp.message("The robots are coming! Head for the hills!")
+    resp = MessagingResponse()      #starts the TwiML response
+    resp.message("The robots are coming! Head for the hills!")  #customize this per received msg
     return str(resp)
 
 if __name__ == "__main__":
