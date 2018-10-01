@@ -23,6 +23,7 @@ def bubblesort(nlist, descending):
                 if nlist[i] > nlist[i+1]:  # then swap them
                     nlist[i], nlist[i+1] = nlist[i+1], nlist[i]
                 print(num_list, end_pos)
+                
             end_pos -= 1
     
 
