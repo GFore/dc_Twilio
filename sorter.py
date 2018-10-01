@@ -35,6 +35,8 @@ while True:
         num_list.append(next_num)
     except:
         break
-print(num_list)
-bubblesort(num_list, True)
+sort_type = input("Ascending (A) or Descending (D)? ").lower()
+
+print(num_list, sort_type)
+bubblesort(num_list, sort_type=='d')
 print(num_list)
