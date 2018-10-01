@@ -2,11 +2,11 @@
 # and a sort order (ascending or descending) from user and
 # returns the list sorted as requested
 
+# import pygame
 
 def bubblesort(nlist, descending):
 
     if descending:
-        # nlist.sort(reverse=True)
         end_pos = len(nlist)-1
 
         while end_pos > 1:
@@ -40,3 +40,5 @@ sort_type = input("Ascending (A) or Descending (D)? ").lower()
 print(num_list, sort_type)
 bubblesort(num_list, sort_type=='d')
 print(num_list)
+
+# pygame.init()
