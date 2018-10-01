@@ -27,7 +27,14 @@ def bubblesort(nlist, descending):
     
 
 # num_list = [1, 222, 1000, 10, 0, 9, 7, 8, 1, 3, 6, 5, 2, 4]
-num_list = [1, 222, 1000, 10, 0]
+# num_list = [1, 222, 1000, 10, 0]
+num_list = []
+while True:
+    try:
+        next_num = int(input("Enter an Integer or return to end list: "))
+        num_list.append(next_num)
+    except:
+        break
 print(num_list)
 bubblesort(num_list, True)
 print(num_list)
